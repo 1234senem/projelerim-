@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#define max 50;
+
+void insertion_short(int arr[], int size) {
+	int i, j, eleman;
+	for (i = 1; i < size; i++) {
+		eleman = arr[i];
+		j = i - 1;
+
+		while (j >= 0 && arr[i] > eleman) {
+			arr[j + 1] = arr[j];
+			j--;
+		}
+		arr[j + 1] = eleman;
+	}
+	
+	for (int i = 0; i < size; i++)
+	{
+		printf("%d", arr[i]);
+	}
+
+
+}
+
+int main() {
+
+	int array[6];
+	printf("elemanları girin");
+	for (int i = 0; i < 6; i++) {
+
+		scanf("%d", &array[i]);
+	}
+
+	insertion_short(array, 6);
+
+	
+
+	system("pause");
+	getchar();
+	return 0;
+}
