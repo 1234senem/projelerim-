@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main() {
+	char text[256];
+	//fputs kullanıcıdan aldıgın  stringi yazıyor
+	FILE *filep;
+	filep = fopen("yaz.txt", "a");
+	if (filep == NULL) {
+
+		printf("dosya oluşturulamadı.");
+	}
+	else {
+		printf("bi sey yazın");
+		fgets(text, 256, stdin);
+		fputs(text, filep); //hangi text hangi dosya
+		printf("dosya yazıldı ");
+		fclose(filep);
+
+	}
+	return 0;
+
+
+}
