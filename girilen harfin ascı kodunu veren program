@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main() { 
+    char d;
+    d='s';
+    printf("d karateri:%c dir.",d);
+    printf("%c=%d\n",d);
+    getchar();
+     return 0; }
