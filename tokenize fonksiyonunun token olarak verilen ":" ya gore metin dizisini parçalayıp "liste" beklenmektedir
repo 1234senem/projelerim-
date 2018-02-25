@@ -1,0 +1,47 @@
+//tokenize fonksiyonunun token olarak verilen ":" ya gore metin dizisini parçalayıp "liste" beklenmektedir
+/*
+beklenen çıktı
+
+liste[0]  telefon
+liste[1]  nokia
+liste[2]  3310
+
+*/
+#include <stdio.h>
+#include <stdlib.h>
+struct tokenler
+{
+	char tokencik[10];
+}liste[3];
+
+
+void tokenize(char *metin, char token, struct tokenler dizi[]) {
+	int i, j;
+	int old = 0;
+	int tokenno = 0;	
+	for ( i = 0;; i++)
+	{
+		if (metin[i]==token||metin[i]=='\0')
+		{	
+			for (j = old; j<i ; j++)
+			{
+				dizi[tokenno].tokencik[j-old] = metin[j];
+			}
+			old = i+1;
+			tokenno++;
+			if (metin[i] == '\0')return;
+		}
+	}
+}
+
+
+
+int main() {
+	
+	char *yazi = "telefon:nokia:3310";
+	tokenize(yazi, ':', liste);
+	printf("%s\n", liste[0].tokencik);
+	printf("%s\n", liste[1].tokencik);
+	printf("%s\n", liste[2].tokencik);
+	getch();
+}
