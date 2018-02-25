@@ -1,0 +1,93 @@
+#include<stdio.h>
+float maxbul(const float *dizi,int boyut);
+float pozitif_topla(const float *dizi,int boyut);
+float mutlak_topla(const float *dizi,int boyut);
+void yaz(char *str)
+{
+	int ilk = 0;
+	while(*str != NULL)
+	{
+		if(*str == ' '){
+			printf("\n");
+			ilk = 1;
+		}
+		else{
+			if(ilk==1){
+				printf("%c",*str-32);
+				ilk = 0;
+			}
+			else
+				printf("%c",*str);
+		}
+		str++;
+	}
+}
+int main()
+{
+	float dizi[]={0,1,-6,7,8,-3,-5,7,5,-7};
+	char str[]="Ali program yaz!";
+	yaz(str);
+	int boyut = 10;
+	float maks;
+	float pozitiftoplam;
+	float mutlaktoplam;
+	maks = maxbul(dizi,boyut);
+	pozitiftoplam = pozitif_topla(dizi,boyut);
+	mutlaktoplam = mutlak_topla(dizi,boyut);
+	printf("Mutlak Toplam=%.2f",mutlaktoplam);
+		printf("maks%d",maks);
+	return 0;
+}
+
+float mutlak_topla(const float *dizi,int boyut)
+{
+	float m;
+	float toplam = 0;
+	int i;
+	for(i=0;i<boyut;i++)
+	{
+		m = *dizi;
+		if(m>=0)
+		{
+			toplam = toplam + m;
+		}
+		else
+		{
+			m = m * (-1);
+			toplam = toplam + m;
+		}
+		dizi++;
+	}
+	return toplam;
+}
+float pozitif_topla(const float *dizi,int boyut)
+{
+	float m;
+	float toplam = 0;
+	int i;
+	for(i=0;i<boyut;i++)
+	{
+		m = *dizi;
+		if(m>0)
+		{
+			toplam = toplam + m;
+		}
+		dizi++;
+	}
+	return toplam;
+}
+float maxbul(const float *dizi,int boyut)
+{
+	float m = *dizi;
+	dizi++;
+	int i;
+	for(i=1;i<boyut;i++)
+	{
+		if(*dizi < m)
+		{
+			m = *dizi;
+		}
+		dizi++;
+	}
+	return m;
+}
