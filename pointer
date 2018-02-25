@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+int main() {
+	int i = 5;
+	int*p = &i;//tanımlarken * koy 
+	//*p adresteki degeri verırı &degişken adres bilgisi verırır
+	printf("%d\t", p);
+	printf("%p\t", p);
+	printf("%u\t", p);
+	system("pause");
+	getchar();
+	return 0;
+}
