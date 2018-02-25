@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta  name="auther content="ali"/>
+<meta name ="keywords" content="burada programlama anlatıldı/>
+<title>Untitled Document</title>
+<link href="D:\SINEM YEDEK 07.08.2015\resımlerım.jpg" type="image/jpg"
+rel="shortcut icon"/>
+
+
+
+
+
+</head>
+
+<body>
+
+
+<h1>&nbsp;</h1>
+
+
+<h4> departmant of computer science</h4>
+
+
+<hr > veya <hr />
+
+<p>    hello </p>
+
+<hr>    yatayda çizgi gösterir <hr />
+
+<a href="http://www.ktu.edu.tr"> KTU </a>
+
+<p> search
+
+<a href ="http://www.google.com/"> go
+ogle </a> or our <a href="lectures.html">lecture notes </a>
+
+
+
+<img src="C:\Users\SİNEM PC\Desktop\html ve ccs.jpg" alt="Mario_room_desktop_by_Saint_Lulu"/>
+
+<a href="#">KTU </a> <br/>
+
+<a href="http://www.ktu.edu.tr"><img src"dene.bmp"/>
+
+<p>
+
+alt="açıklama" title="KTU" </p>
+
+<h1> <strong> kalın <em>      ve italik yazıyor     </em></strong> </h1>
+   <!--//  000 siyah 255 0 0 kırmızı 255 255 255 beyaz/* */ -->
+   
+<p> 
+<a href="http://validator.W3.org/check/referer"> 
+<img src="http://webmaster.cs.washington.edu/w3c html.png"
+alt="validate"/>  </p>
+
+<p>
+<ul>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+<li> web tasarım </li>
+</ul>
+
+</p>
+   <ul>
+    <li> dersler:
+        <ul>
+        <li> web tasarım </li>
+        <li> web tasarım </li>
+       </ul>
+    </li>
+        <li>zor derler:
+         <ul>
+         <li>web tasarım </li>
+         <li>derleyici tasarım </li>
+         </ul>
+        </li>
+    </ul>
+    
+    <p>dersler:</p>
+    <ol>
+      <li> web tasarım </li>
+      <li> web tasarım </li>
+      <li> web tasarım </li>
+    </ol>
+    
+    
+        
+<dl>
+       <dt> c </dt> <dd> fonsiyon programlama dili</dd>
+       <dt> java </dt> <dd> nesne tabanlı proagramlama dili</dd>
+      
+      
+ </dl>
+  <p>ali olanları söyle anlattı:</p>
+<blockquote>
+ <p>derslerin hepsi cok sıkıcı oldugu için hepsinden nefret ediyorum. keske mezun olsam.alıntı yaptık.</p>
+<blockquote/>
+
+<p>ali dedi ki:<inline> bugun okula gitmeyecegim:</inline></p>
+
+<p>
+<del> final sınavı </del>    <ins> arasınav </ins>
+</p>
+
+
+   <p>
+   
+   <abbr title:"karadeniz teknik üniversitesi"> KTU </abbr>
+   
+   
+   </p>
+ 
+ <p>
+the <code> ul </code> and <code> ol </code>
+tags make lists 
+ </p>
+ 
+ 
+  <pre>
+  merha ba
+  nasil şin 
+  </pre>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+<p>&nbsp;</p>
+
+
+
+</body>
+</html>
