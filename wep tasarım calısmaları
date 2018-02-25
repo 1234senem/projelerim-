@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>olucak bu iş </title>
+
+</head>
+
+
+<body style="background-color:Powderblue;">
+<p><a href="https://www.facebook.com/"</a> bu sıteye yönlendırmeye calısıyorum hatırladıgım kadarıyla.<p>
+<a href ="https://twitter.com/meskanx"><h1>FTHGFJHLLIJ,P .</h1>
+<img src="http://www.yazilimsinifi.com/wp-content/uploads/2013/04/2652Sonsuzluk_isareti.png" alt="resim" width="200" height="200"/>
+<img src="D:\resımlerım\askımmm\20140522_152032.jpg" alt="resmim" width="400" height="400"/>
+<h1> sinemın ılk sıtesı </h2>
+<p>mesut </p>
+<h2>html ögrenıyorum :)</h2>
+<p> bu benım kısısel alanım </p>
+<h3>evde tek yasıyorum </h3>
+<p> </p>
+<h4>yazı tipi boyutu ne kadar</h4>
+<p> </p>
+<h5>yazı tipi boyutu </h5>
+<h6>en küçük yazı tipi boyutu</h6>
+<h1> texler.</h1>
+<p>  <b>paragrafların arasında calısırmıs bolt.</b> </p>
+<p>  <strong> strong yazısı.</strong><p/>
+<p>  <big>bu yazıyı büyük gösteriyormus.</big> </p>
+<p>  <i> bu yazi ıtalic yazısı.</i></p>
+<p>  <em>bu yazı emphasized.</em></p>
+<p>  <code> bu igisayarlarda kullanılır.</code></p>
+<p>bu yazımız üst bılgı ve alt bılgı formları olucak.<sub>subscript sinem </sub> ve <sup>süperscript <strong><h4>mesut</h4></strong> </sup></p>
+<p><h3> fontlar yazı tıpını boyunutunu ve rengını ayarlamak için kullanılır.</h3></p>
+<p><font size="6" face="arial" color="red"> öncelikle koduuzu yazdıktan sonrA İSTEDİGİMİZ YAZIYI OLUSTURDUK.<br/>
+ ben sinem basan ve bu benım ılk sıte denemelerım.<br/>bana basarılar.</font></p>
+
+<p><font size="10" face="verdana" color="yellow"> 1o pxel boyutunda verdana yazı tıpınde sarı bır yazı olusturdum.</font></p>
+
+
+
+<p style="font-family:verdana;color:blue;">koskoca bır paragrafın yazı tıpını degıstırıyormusum bu kodla.bende denemk ısstedım .ama kafam karısıyor yavas yavas.</p>
+<p style="font-family:arial;color:green;">bu da paragrafın rengını degıstırmek ıcın farklı bır deneme .arial yazı tipiyle ve yesıl renkle olusturuldu .</p>
+<p style="font-size:70px;">bu yazı 70 pixel boyutundadır.</p>
+
+<p><h1>  html tablo olusturma </h1></p>
+
+<table  align="center" border="10">
+<tr>
+<td> 1.satır 1.sütün 1.kolon </td>
+<td> 1.satır 2.sütün 2.kolon </td>
+<td> 1.satır 3.sütün 3.kolon </td>
+</tr>
+<tr>
+<td>2.satır 1.sutun 1.kolon </td>
+<td>2.satır 2.sutun 2.kolon </td>
+<td>2.satır 3.sutun 3.kolon </td>
+
+</tr>
+</table>
+
+<ul> 
+ <li><h3>yapacaklarım.</h3>
+<ul>   <li><h5>bir wep site kurmak istiyorum</h5> </li>  <li><h5>yurt dısında stajımı yapmak ıstıyorum.</h5></li>  </ul>
+</li>
+<li><h3>yapamadıklarım</h3></li>
+<ol> <li><h5>bir wep site kuramadım .</h5></li> <li><h5> yurt disına staj yapmaya gıdemedım</h5> </li></ol>
+<li><h3>yapmak istediklerim.</h3></li> <ul><li><h3>sevgilimden ayrılmak ıstıyorum.</h3></li></ul>
+</ul>
+<p>kullanıcı bılgılerını alma </p>
+<p> <br/> bu kod bır alt satıra gecırır </p>
+
+
+<form action"kaydet.html" method "Post ">
+isim:<input type="text" name="name"/>
+soyisim :<input type="text" name="soyisim"/><br/>
+<input type="submit" value="Kaydet"/>
+</form>
+
+<form action"kaydet.html" method "get ">
+isim:<input type="text" name="name" value="isim verildi."/>
+soyisim :<input type="text" name="soyisim" value "form yapma"/><br/>
+<input type="submit" value="Kaydet"/>
+<input type="radio" name="cinsiyet" value="bayan"/> bayan 
+<input type="radio" name="cinsiyet" value="erkek"/> erkek<br/>
+
+<input type="checkbox" name="cinsiyet" value="bayan"/> bayan 
+<input type="checkbox" name="cinsiyet" value="erkek"/> erkek<br/>
+<select name="ev araç gereçleri" >
+<option value=" tava">tava</option>
+<option value=" halı">halı</option>
+<option value=" bardak">bardak</option>
+<option value=" yatak">yatak</option>
+<option value=" dolap">dolap</option>
+<option value=" ayna">ayna</option>
+<input type="submit" value="kaydet"/>
+
+
+
+</select>
+
+
+</form>
+
+
+
+
+</body>
+</html>
