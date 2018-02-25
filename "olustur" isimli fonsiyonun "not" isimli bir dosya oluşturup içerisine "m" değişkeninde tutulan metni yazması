@@ -1,0 +1,17 @@
+/*
+aşağıdaki "olustur" isimli fonsiyonun "not" isimli bir dosya oluşturup içerisine "m" değişkeninde tutulan metni yazması beklenmektedir
+*/
+
+#include <stdio.h>
+
+void olustur(FILE *file,char *m) {
+	file = fopen("not", "w+");
+	fprintf(file, "%s", m);
+	fclose(file);
+}
+
+int main() {
+	FILE *fp=NULL;
+	char *metin = "uslu bir cocuk olursan sirinleri gorebilirsin";
+	olustur(fp,metin);
+}
