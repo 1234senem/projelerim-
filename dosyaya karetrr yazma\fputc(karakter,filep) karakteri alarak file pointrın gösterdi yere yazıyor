@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+#include<cstdlib>
+#include<string.h>
+int main() {
+
+	/*dosyaya karetrr yazma
+	fopen("dosya adı","mod")
+	fclose(filep) file pointeer alıyor
+	fputc(karakter,filep) karakteri alarak file pointrın gösterdi yere yazıyor
+	*/
+	char veri[25] = "yazilim bilimi";
+	int uzunluk = strlen (veri);
+	FILE* filep = fopen("yazilimbilimi.txt", "w");
+	if (filep == NULL) {
+
+		printf("dosya oluşturulamadı");
+	}
+	else {
+		for (int i = 0; i < uzunluk; i++) {
+			fputc(veri[i], filep);
+			printf("yazilan karekter %c\n", veri[i]);
+		}
+		printf("dosyaya başarıyla yazildi");
+		fclose(filep);
+	}
+	return 0;
+}
