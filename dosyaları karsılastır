@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+struct ogrenci
+{
+	int numara;
+	char isim[15];
+	int puan;
+}liste[10],temp;
+
+
+
+int main() {
+	FILE *a=NULL;
+	FILE *b=NULL;
+	FILE *c=NULL;
+
+	a = fopen("soru5-1", "r+");
+	b = fopen("soru5-2", "r+");
+	c = fopen("soru5-3", "w+");
+	
+	int i;
+	int j;
+
+	for (i=0;!feof(a);i++)
+	{
+		fscanf(a,"%d%s", &liste[i].numara, liste[i].isim);
+		rewind(b);
+		while (!feof(b))
+		{
+			fscanf(b, "%d%d", &temp.numara, &temp.puan);
+			if (temp.numara==liste[i].numara)
+			{
+				liste[i].puan = temp.puan;
+			}
+		}
+	}
+
+	for (i = 0; i < 10; i++)
+	{
+		if (liste[i].puan!=NULL)
+		{
+			fprintf(c, "%d %s %d\n", liste[i].numara, liste[i].isim, liste[i].puan);	
+		}
+	}
+
+	fclose(a);
+	fclose(b);
+	fclose(c);
+
+	
+}
