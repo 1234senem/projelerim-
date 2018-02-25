@@ -1,0 +1,23 @@
+#include<stdio.h>
+int faktoriyel(int k)
+ {
+                   int i,s=1;
+                   for (i=1;i<=k;i++)
+                     s*=i;
+ return (s);
+ }
+int kombinasyon(int n,int r)
+   {
+                    int s;
+                    s=faktoriyel(n)/(faktoriyel(n-r)*faktoriyel(r));
+                    return s;
+   }
+int main()
+   {
+   int x=5,y=3,z;
+   z=kombinasyon(x,y);
+   printf("z:%d\n",z);
+   getchar();
+   return (0);
+}
+     
