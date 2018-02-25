@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+int main() {
+	int a = 5,*ap;
+	float b = 3.2, *bp;
+	double c = 3.412 ,*cp;
+	char d = "a", *dp;
+	int sayilar[5] = { 1,2,3,4,5 };
+	int *arrayp;
+	ap = &a;
+	bp = &b;
+	cp = &c;
+	dp = &d;
+	arrayp = &sayilar[1];
+	printf("%u adresindeki intin degeri");
+	int i;
+	int*p = &i;//tanımlarken * koy 
+			   //*p adresteki degeri verırı &degişken adres bilgisi verırır
+	printf("%d\t", p);
+	printf("%p\t", p);
+	printf("%u\t", p);
+	system("pause");
+	getchar();
+	return 0;
+}
