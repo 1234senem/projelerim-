@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main() { 
+    int x;
+    int b,y,o,br;
+    printf("x= "); scanf("%d",&x);
+    b=x/1000; printf("b: %d\n",b);
+    y=(x-b*1000)/100; printf("y: %d\n",y);
+    o=(x-b*1000-y*100)/10; printf("o: %d\n",o);
+    br=(x-b*1000-y*100-o*10); printf("br: %d\n",br);
+    getchar(); getchar(); return 0; }
