@@ -1,0 +1,60 @@
+/*
+
+aşağıdaki sırala fonksinoyu "x" uzunluklu "ogrenci" tipinde bir diziyi numara sırasına göre küçükten büyüğe sıralaması gerekmektedir.
+
+beklenen çıktı:
+
+1	abuzittin
+11	ucamayansuperkahraman
+13	loremipsum
+15	dutluk
+19	at
+
+*/
+
+#include <stdio.h>
+
+struct ogrenciler
+{
+	int numara;
+	char *isim;
+}liste[5],temp;
+
+void sirala(struct ogrenciler dizi[], int x) {
+
+	for (size_t j = 0; j < x; j++)
+	{
+		for (size_t i = 0; i < x - 1; i++)
+		{
+			if (liste[i].numara > liste[i + 1].numara) {
+				temp = liste[i];
+				liste[i] = liste[i + 1];
+				liste[i + 1] = temp;
+			}
+		}
+	}
+	
+}
+
+int main() {
+	liste[0].numara = 15;
+	liste[0].isim = "dutluk";
+	liste[1].numara = 13;
+	liste[1].isim = "loremipsum";
+	liste[2].numara = 19;
+	liste[2].isim = "at";
+	liste[3].numara = 11;
+	liste[3].isim = "ucamayansuperkahraman";
+	liste[4].numara = 1;
+	liste[4].isim = "abuzittin";
+	
+	sirala(liste, 5);
+	
+	int i;
+	
+	for ( i = 0; i < 5; i++)
+	{
+		printf("%d\t%s\n", liste[i].numara, liste[i].isim);
+	}
+	getch();
+}
