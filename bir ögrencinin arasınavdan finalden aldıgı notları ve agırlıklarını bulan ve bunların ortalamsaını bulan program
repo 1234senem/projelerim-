@@ -1,0 +1,34 @@
+//bir ögrencinin arasınavdan finalden aldıgı notları ve agırlıklarını bulan ve bunların ortalamsaını bulan program
+
+
+#include<stdio.h>
+char notum(int sin1,int sin2,float sinagirlik);
+ main ()
+{int cevap,arasinav,final;
+float agirlik;
+char harflinot;
+do{
+     printf("\n\n Başka Not hesaplansinmi?(1=Evet,0=Hayir):");
+     scanf("%d",&cevap);
+     if (cevap==1){
+                   printf("Arasinav 1,Final Notu ve Agırligini Girin:");
+                   scanf("%d%d%f",&arasinav,&final,&agirlik);
+                   harflinot=notum(arasinav,final,agirlik);
+                   printf("Notum:%c\n",harflinot);
+                   }
+                   }
+                   while(cevap==1);
+                   }
+                   char notum(int sin1,int sin2,float sinagirlik)    
+   {float ortalama=sinagirlik*sin1+(1-sinagirlik)*sin2;
+   if(ortalama>50.0) return 'G';
+   else return 'K';} 
+    
+    
+    
+    
+    
+    
+    
+    
+    
