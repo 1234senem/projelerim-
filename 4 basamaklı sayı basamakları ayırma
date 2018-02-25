@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main() { 
+    int x;
+    int a,b,c,d,gec,eb,ek;
+    printf("x= "); scanf("%d",&x);
+    a=x/1000;                      printf("a: %d\n",a);
+    b=(x-a*1000)/100;              printf("b: %d\n",b);
+    c=(x-a*1000-b*100)/10;                       printf("c: %d\n",c);
+    d=(x-a*1000-b*100-c*10);       printf("d: %d\n",d);
+    d=x%10;
+    if(b<a) {gec=a; a=b; b=gec;
+                    printf("1) %d %d %d %d\n",a,b,c,d); }
+    if(c<b) {gec=b; b=c; c=gec;
+                    printf("2) %d %d %d %d\n",a,b,c,d); }
+    if(d<c) {gec=c; d=c; d=gec;                
+                    printf("3) %d %d %d %d\n",a,b,c,d); }
+    if(b<a) {gec=b; b=a; a=gec;                
+                    printf("4) %d %d %d %d\n",a,b,c,d); }
+    if(c<b) {gec=c; c=b; b=gec;
+                    printf("5) %d %d %d %d\n",a,b,c,d); }
+    if(b<a) {gec=b; b=a; a=gec;                
+                    printf("6) %d %d %d %d\n",a,b,c,d); }
+    
+    getchar(); getchar(); return 0; }
