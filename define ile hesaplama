@@ -1,0 +1,18 @@
+#include<stdio.h>
+#define PI 3.14
+#define nufus 100000
+#define Fo 0.05
+int main()
+{  int x=11,y=6,z=1;
+char c='k',d='y';
+float w;
+w=x*x*PI;  printf("alan=%f\n",w);
+if(x==5||y!=3)  printf("Dogrudur..\n");
+else printf("sonuc yanlistir...\n");
+
+if(!(x>9&&y!=23)) printf("dogrudur...\n");
+else printf("sonuc yanlistir...\n");
+
+if(c!=d&&c!='\n')   printf("dogrudur...\n");
+else printf ("sonuc yanlistir...\n");
+getchar(); return 0; }
