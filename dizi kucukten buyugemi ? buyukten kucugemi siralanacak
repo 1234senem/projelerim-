@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main() {
+    int a,b,c;
+    char cevap;
+    char nm;
+    printf("uc sayi giriniz:"); scanf("%d %d %d",&a,&b,&c);
+   getchar();
+    printf("kucukten buyugemi ? buyukten kucugemi siralanacak:"); 
+   //scanf("%c",&nm); 
+    scanf("%c",&cevap);    
+    if(cevap=='k' || cevap=='K')  {
+    if(a>b && b>c) printf("%d %d %d\n",c,b,a);
+    else if(a>c && c>b) printf("%d %d %d\n",b,c,a);
+    else if(b>a && a>c) printf("%d %d %d\n",c,a,b);
+    else if(b>c && c>a) printf("%d %d %d\n",a,c,b);
+    else if(c>a && a>b) printf("%d %d %d\n",b,a,c);
+    else if(c>b && b>a) printf("%d %d %d\n",a,b,c);
+}
+   if(cevap=='b' || cevap=='B')
+if(a>b && b>c) printf("%d %d %d\n",a,b,c);
+    else if(a>c && c>b) printf("%d %d %d\n",a,c,b);
+    else if(b>a && a>c) printf("%d %d %d\n",b,a,c);
+    else if(b>c && c>a) printf("%d %d %d\n",b,c,a);
+    else if(c>a && a>b) printf("%d %d %d\n",c,a,b);
+    else if(c>b && b>a) printf("%d %d %d\n",c,b,a);
+    
+    getchar(); getchar();  return 0;   }
