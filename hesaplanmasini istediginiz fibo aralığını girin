@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+
+int main() {
+	int ilksayı = 1;
+	int ikincisayi = 1;
+	int aralık;
+	printf("hesaplanmasini istediginiz fibo aralığını girin:");
+	scanf("%d", &aralık);
+	printf("%d\n %d\n", ilksayı, ikincisayi);
+	for (int i = 0; i < aralık; i++) {
+		int temp;
+		 temp = ikincisayi;
+		ikincisayi += ilksayı;
+		ilksayı = temp;
+		printf("%d\n", ikincisayi);
+
+	}
+	
+	system("pause");
+	return 0;
+
+
+
+
+}
