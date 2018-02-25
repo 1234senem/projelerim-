@@ -1,0 +1,22 @@
+//aşağıda verilen fonksiyonun içine girilen değişkenlerin değerlerini birbiriyle değiştirmesi beklenmektedir.
+//beklenen çıktı(5-4)
+
+#include <stdio.h>
+
+void degistir(int *x, int *y) {
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+}
+
+
+int main() {
+
+	int a = 4;
+	int b = 5;
+
+	degistir(&a, &b);
+
+	printf("%d-%d", a, b);
+
+}
